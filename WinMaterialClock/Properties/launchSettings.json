@@ -1,0 +1,10 @@
+{
+  "profiles": {
+    "WinMaterialClock (Package)": {
+      "commandName": "MsixPackage"
+    },
+    "WinMaterialClock (Unpackaged)": {
+      "commandName": "Project"
+    }
+  }
+}
