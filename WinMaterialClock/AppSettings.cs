@@ -2,7 +2,11 @@ using System.Globalization;
 
 namespace WinMaterialClock;
 
-internal sealed class AppSettings
+/// <summary>
+/// 零反射輕量級設定持久化管理類別，以 INI 純文字格式讀寫於 %LOCALAPPDATA%\WinMaterialClock\settings.ini，
+/// 確保 100% Native AOT 相容性與零序列化額外記憶體開銷。
+/// </summary>
+public sealed class AppSettings
 {
     private static readonly string s_settingsDir =
         Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "WinMaterialClock");
